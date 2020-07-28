@@ -13,11 +13,14 @@ Device-Free Wi-Fi Sensing (DFWS) is becoming a popular research due to the ubiqu
 FAQ:
 
 Q: DO I need to use UDP_Client and UDP_Server of ESP32 to acquire CSI ?
+
 Answer:No, this is not essential to used UDP_Client and UDP_Server of the ESP32, This can be built on any device or any routher. The main purpose is just to generte the traffic to acquire CSI this can be done by any device and router.
 
 
 Q: Do you also have access to the AGC for amplitude compensation. 
+
 Answer: No, ESP32 does not provide any control on the ASIC of the Wi-Fi module, so we can not change the AGC.
 
 Q:do I need to recover  the phase after the collection or is it already done in the CSI Tool ?
+
 ANswer:Yes, the collection of Phase is already included in the CSI Tool. The CSI information includes phase and amplitude of all the subcarriers. 
