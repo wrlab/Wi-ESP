@@ -112,30 +112,62 @@
             
             
             <h2>ESP32 console based Configuration Settings</h2>
+            <p>
+                There are few configurations which are very necessary to acquire CSI.
+                We have included all these settings in the manuscript and discuused very much in detail.
+                These setting includes CPU clock setting, we need to set at maximum so that we can acquire CSI at maximum rate.
+                UART baud rate is very necessary to acquire CSI from ESP32 board.
+                This settings depends on the board type of ESP32 we are using to acquire CSI.
+                Third settings is the SSID information, which need to set before acquring the CSI.
+                The last but the most important setting is the Enabling to get CSI.
+                All these settings can be performed thorigh source code but the more easy way is by using console.
+            </p>
+            
             <figure style="float: center">
-                <img src="Figures/Figure7a-CPU_Clock.JPG" alt="CPUClock" width="400px">
+                <img src="Figures/Figure7a-CPU_Clock.JPG" alt="CPUClock" width="600px">
                 <figcaption>ESP32 CPU Clock Setting</figcaption>
             </figure>
+            <p>
+                There are different options are available to set the clock frequency of the processor.
+                The best is to select maximum which is 240MHz.
+                In some cases this is observed that low clock rate can also work but this is better to select the clock rate maximum.
+            </p>
+            
             
             <figure style="float: center">
-                <img src="Figures/Figure7b-UART Baud Rate.JPG" alt="UARTBaudRate" width="400px">
+                <img src="Figures/Figure7b-UART Baud Rate.JPG" alt="UARTBaudRate" width="600px">
                 <figcaption>ESP32 UART Baud Rate Setting</figcaption>
             </figure>        
-     
+            <p>
+                The baud rate settings is necessary in case you are using UART port to commuincate to the ESP32.
+                The Baud rate depends upon the board type you are using to acquire CSI.
+                There are many kinds of board are available in the market. Select that board which provides you maximum baud rate which is 2M.
+            </p>
+            
+            
             <figure style="float: center">
-                <img src="Figures/Figure7c-SSIDConnection.JPG" alt="SSIDConnection" width="400px">
+                <img src="Figures/Figure7c-SSIDConnection.JPG" alt="SSIDConnection" width="600px">
                 <figcaption>ESP32 SSID Connection Setting</figcaption>
-            </figure>             
+            </figure>
+            <p>
+                The CSI gathering can be performed without using this. But still we have done this to avoid any confusion. 
+                The important thing to acquire CSI is the channel number which are you uisng for transmission
+                This is better to filter the channel number and MAC address to minimze the traffic otherwise the traffic need to be filter at later stage.
+            </p>           
+            
             
              <figure style="float: center">
-                <img src="Figures/Figure7d-EnableCSI.JPG" alt="EnableCSI" width="400px">
+                <img src="Figures/Figure7d-EnableCSI.JPG" alt="EnableCSI" width="600px">
                 <figcaption>Enable Passive CSI gathering</figcaption>
             </figure>           
-            
+             <p>
+                 The most important setting of the ESP32 is the enabling the CSI by using the console.
+                 This must be enable before configuring ESP32.
+            </p>            
             
             <h2></h2>
 
-            Researcher used Wi-ESP along the globe.
+            Researcher used Wi-ESP around the globe.
 
             <ul>
             </ul>
